@@ -11,3 +11,136 @@ body {
 .logo > img {
   width: 50px;
 }
+
+section.product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+
+section.product i, h2{
+  text-align: center;
+}
+
+section.product p {
+  padding: 0 4px;
+}
+
+nav.navbar{
+  background-color: grey;
+}
+
+footer {
+  border-top: 1px solid grey;
+  margin-top: 10px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li {
+  display: inline;
+}
+
+
+/* Pantallas grandes */
+@media only screen and (min-width: 1025px) {
+
+  header div {
+    position: absolute;
+    left: 10%;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section.product {
+    width: 30%;
+  }
+
+  nav.navbar div.hamburger {
+    display: none;
+  }
+
+  nav.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+
+  nav.navbar ul li {
+    display: inline;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+}
+
+/* Tablets */
+@media only screen and (max-width: 1024px) {
+
+
+  header div {
+    position: absolute;
+    left: 10%;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  nav.navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav.navbar .hamburger {
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  nav.navbar ul {
+    display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.product {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  
+}
+
+/* Celulares */
+@media only screen and (max-width: 767px) {
+
+  header div {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  /* header h1 {
+    text-align: center;
+  } */
+  header div, h1 {
+    text-align: center;
+  }
+
+}
+
